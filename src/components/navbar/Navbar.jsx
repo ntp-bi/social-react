@@ -3,7 +3,7 @@ import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 
 import "./navbar.css";
 
-const Navbar = () => {
+export const Navbar = () => {
     return (
         <div className="navbarContainer">
             <div className="navbarLeft">
@@ -11,8 +11,9 @@ const Navbar = () => {
             </div>
             <div className="navbarCenter">
                 <div className="searchbar">
-                    <Search className="searchIcon"/>
+                    <Search className="searchIcon" />
                     <input
+                        type="search"
                         placeholder="Search for friend, post or video"
                         className="searchInput"
                     />
@@ -42,5 +43,3 @@ const Navbar = () => {
         </div>
     );
 };
-
-export default Navbar;
