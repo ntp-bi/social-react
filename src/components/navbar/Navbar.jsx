@@ -3,7 +3,7 @@ import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 
 import "./navbar.css";
 
-export const Navbar = () => {
+const Navbar = () => {
     return (
         <div className="navbarContainer">
             <div className="navbarLeft">
@@ -43,3 +43,5 @@ export const Navbar = () => {
         </div>
     );
 };
+
+export default Navbar;

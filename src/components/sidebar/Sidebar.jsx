@@ -12,7 +12,7 @@ import {
     School,
 } from "@mui/icons-material";
 
-export const Sidebar = () => {
+const Sidebar = () => {
     return (
         <div className="sidebar">
             <div className="sidebarWrapper">

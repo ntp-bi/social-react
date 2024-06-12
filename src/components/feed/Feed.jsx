@@ -1,11 +1,15 @@
-import React from 'react'
-import "./feed.css"
+import React from "react";
+import Share from "../../components/share/Share";
+import "./feed.css";
 
-export const Feed = () => {
-  return (
-    <div className='feed'>
-      Feed
-    </div>
-  )
-}
+const Feed = () => {
+    return (
+        <div className="feed">
+            <div className="feedWrapper">
+                <Share />
+            </div>
+        </div>
+    );
+};
 
+export default Feed;
