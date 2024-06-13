@@ -1,7 +1,18 @@
 import React from "react";
 import "./login.css";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+    const navigate = useNavigate();
+
+    const handleLogin = () => {
+        navigate("/");
+    };
+
+    const handleRegister = () => {
+        navigate("/register");
+    };
+
     return (
         <div className="login">
             <div className="loginWrapper">
@@ -20,9 +31,11 @@ const Login = () => {
                             type="password"
                             className="loginInput"
                         />
-                        <button className="loginButton">Log In</button>
+                        <button className="loginButton" onClick={handleLogin}>
+                            Log In
+                        </button>
                         <span className="loginForgot">Forgot Password?</span>
-                        <button className="loginRegisterButton" type="submit">
+                        <button className="loginRegisterButton" onClick={handleRegister}>
                             Create New Account
                         </button>
                     </div>

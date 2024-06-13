@@ -1,17 +1,15 @@
-import Home from "./pages/home/Home";
-import Login from "./pages/login/Login";
-import Profile from "./pages/profile/Profile";
-import Register from "./pages/register/Register";
+import React, { useState } from "react";
+import Router from "./router/Router";
 
-function App() {
+const App = () => {
+    // const [isAuthenticated, setIsAuthenticated] = useState(false);
+
     return (
-        <div>
-            <Home />
-            <Profile />
-            {/* <Login /> */}
-            {/* <Register /> */}
-        </div>
+        <>
+            {/* <Router isAuthenticated={isAuthenticated} /> */}
+            <Router />
+        </>
     );
-}
+};
 
 export default App;

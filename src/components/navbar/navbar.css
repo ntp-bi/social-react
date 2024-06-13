@@ -60,9 +60,10 @@
     margin-right: 10px;
     font-size: 14px;
     cursor: pointer;
+    color: white;
 }
 
-.narbarIcons {
+.navbarIcons {
     display: flex;
 }
 
@@ -87,10 +88,50 @@
     font-size: 12px;
 }
 
+.navbarAccount {
+    position: relative;
+}
+
 .navbarImg {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
+}
+
+.navbarSubAccount {
+    position: absolute;
+    list-style: none;
+    font-size: 16px;
+    background-color: #fff;
+    width: 160px;
+    top: calc(100% + 10px);
+    right: -10px;
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 8px 0;
+    border-radius: 4px;
+    transition: all 0.3s ease-in;
+    z-index: 99999;
+}
+
+.navbarSubAccount li {
+    padding: 4px 10px;
+    font-size: 15px;
+    color: #616161;
+}
+
+.navbarSubAccount li:hover {
+    background-color: rgba(201, 201, 201, 0.2);
+    cursor: pointer;
+}
+
+.navbarSubAccount::before {
+    content: "";
+    position: absolute;
+    right: 4px;
+    top: -29px;
+    border-width: 20px 21px;
+    border-color: transparent transparent #fff transparent;
+    border-style: solid;
 }
