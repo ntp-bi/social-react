@@ -12,6 +12,7 @@ import {
 } from "@mui/icons-material";
 import CloseFriend from "../closeFriend/CloseFriend";
 import { Users } from "../../dummyData";
+
 import "./sidebar.css";
 
 const Sidebar = () => {
